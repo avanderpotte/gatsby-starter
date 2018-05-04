@@ -1,0 +1,125 @@
+* {
+  backface-visibility: hidden;
+  transform-style: flat;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-drag: none;
+  outline: 0;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: border-inherit;
+}
+@-ms-viewport {
+  width: device-width;
+}
+html {
+  -ms-overflow-style: scrollbar;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Calibre-Regular', Arial, sans-serif;
+  color: $BLACK;
+  font-size: $FONT_SIZE;
+  line-height: $LINE_HEIGHT;
+  letter-spacing: $LETTER_SPACING;
+  font-feature-settings: "liga", "kern";
+  text-rendering: optimizelegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  overflow-x: hidden;
+  @include max-screen($MQ_MEDIUM) {
+    font-size: $MOBILE_FONT_SIZE;
+    line-height: $MOBILE_LINE_HEIGHT;
+    letter-spacing: $MOBILE_LETTER_SPACING;
+  }
+}
+
+#app-container {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  cursor: default;
+  max-width: $MAX_WIDTH;
+  margin: 0 auto;
+}
+button {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  cursor: pointer;
+}
+form {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+img {
+  border:0;
+  border-style:none;
+  outline : none;
+  border: none;
+}
+svg, svg * {
+  backface-visibility: hidden;
+}
+.clear-float {
+  clear: both;
+}
+img {
+  width: 100%;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: block;
+}
+select:active, select:hover {
+  outline: none;
+}
+input:-webkit-autofill {
+  box-shadow: 0 0 0 30px $WHITE inset;
+}
+input:required {
+  box-shadow: none !important;
+}
+input:invalid {
+  box-shadow: 0 0 0px white !important;
+}
+a:-moz-focus-inner {
+    border: 0;
+    outline: none;
+}
+a:focus {
+    border: 0;
+    outline: none;
+}
+// for firefox image scale smoothing
+img {
+  -ms-interpolation-mode: bicubic;
+}
+// for ie
+img {
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */
+  zoom: 1;
+}
+.vertical-center-parent {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.vertical-center-child {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}

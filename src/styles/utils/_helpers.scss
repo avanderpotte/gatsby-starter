@@ -1,0 +1,199 @@
+// -------------------------
+// display
+// -------------------------
+
+.u-block {
+  display: block;
+}
+.u-inline {
+  display: inline;
+}
+.u-inline-block {
+  display: inline-block;
+}
+.u-flex {
+  display: flex;
+}
+.u-none {
+  display: none;
+}
+
+// -------------------------
+// positioning
+// -------------------------
+
+.u-relative {
+  position: relative;
+}
+.u-absolute {
+  position: absolute;
+}
+.u-fixed {
+  position: fixed;
+}
+.u-pos-tl {
+  top: 0;
+  left: 0;
+}
+.u-pos-tr {
+  top: 0;
+  right: 0;
+}
+.u-pos-xy-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.u-pos-x-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.u-pos-y-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.u-pos-l--0 {
+  left: 0;
+}
+.u-pos-b--0 {
+  bottom: 0;
+}
+// -------------------------
+// sizing
+// -------------------------
+
+.u-fit {
+  width: 100%;
+  height: 100%;
+}
+.u-fit-vwh {
+  width: 100vw;
+  height: 100vh;
+}
+.u-fit-w {
+  width: 100%;
+}
+.u-fit-h {
+  height: 100%;
+}
+.u-fit-vw {
+  width: 100vw;
+}
+.u-fit-vh {
+  height: 100vh;
+}
+
+// -------------------------
+// spacing
+// -------------------------
+
+.u-spacing {
+  height: $OVERALL_MARGIN;
+}
+.u-spacing--half {
+  height: $OVERALL_MARGIN / 2;
+}
+.u-pad {
+  padding: $OVERALL_MARGIN;
+}
+.u-pad-x {
+  padding: 0 $OVERALL_MARGIN;
+}
+.u-pad-y {
+  padding: $OVERALL_MARGIN 0;
+}
+.u-margin-auto {
+  margin: 0 auto;
+}
+
+// -------------------------
+// overflow
+// -------------------------
+
+.u-overflow-h {
+  overflow: hidden;
+}
+.u-overflow-x-h {
+  overflow-x: hidden;
+}
+.u-overflow-y-h {
+  overflow-y: hidden;
+}
+
+// -------------------------
+// opacity
+// -------------------------
+
+.u-opacity--0 {
+  opacity: 0;
+}
+.u-opacity--100 {
+  opacity: 1;
+}
+
+// -------------------------
+// z-index
+// -------------------------
+
+@for $i from 1 through 10 {
+  .u-z-index--#{$i} {
+    z-index: $i;
+  }
+}
+.u-z-index--9999 {
+  z-index: 9999;
+}
+
+// -------------------------
+// behavior
+// -------------------------
+
+.u-btn {
+  cursor: pointer;
+}
+.u-untouch {
+  pointer-events: none;
+}
+
+// -------------------------
+// colors
+// -------------------------
+
+.t-color-white {
+  color: $WHITE;
+}
+.t-color-black {
+  color: $BLACK;
+}
+.t-bg-black {
+  background-color: $BLACK;
+}
+.t-bg-white {
+  background-color: $WHITE;
+}
+
+// -------------------------
+// text-transform
+// -------------------------
+.u-text-transform-u {
+  text-transform: uppercase;
+}
+.u-text-transform-l {
+  text-transform: lowercase;
+}
+
+// -------------------------
+// text-align
+// -------------------------
+.u-text-align-l {
+  text-align: left
+}
+.u-text-align-r {
+  text-align: right;
+}
+.u-text-align-c {
+  text-align: center;
+}
+// -------------------------
+// text
+// -------------------------

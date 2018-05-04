@@ -1,0 +1,11 @@
+.o-wrapper {
+  max-width: $MQ_LARGE;
+  @include max-screen($MQ_LARGE) {
+    padding-left: $GRID_GUTTER;
+    padding-right: $GRID_GUTTER;
+  }
+}
+.t-link {
+  color: darken( $WHITE, 35 );
+  text-decoration: none;
+}
